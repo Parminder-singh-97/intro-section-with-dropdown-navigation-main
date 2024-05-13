@@ -1,0 +1,365 @@
+@font-face {
+  font-family: Epil;
+  src: url("/fonts/Epilogue-VariableFont_wght.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Epil;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  overflow-x: hidden;
+}
+
+/* nav barrr------------------------ */
+nav {
+  position: relative;
+  z-index: 5;
+  padding: 15px 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left_nav {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_nav h1 {
+  font-size: 2.5rem;
+}
+.left_nav ul {
+  list-style: none;
+  gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_nav ul li:hover,
+.dropbtn:hover {
+  font-weight: 600;
+}
+
+.features {
+  display: none;
+  border-radius: 15px;
+  position: absolute;
+  top: 68px;
+  left: 120px;
+  z-index: 1;
+  box-shadow: 0px 0px 13px;
+  width: 9rem;
+  height: 10rem;
+}
+
+.drop_fe {
+  padding: 20px 0px;
+  font-family: Epil;
+}
+
+.dropbtn {
+  gap: 5px;
+  display: flex;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.drop_fe:hover .features {
+  display: block;
+}
+.drop_fe:hover .down_feature {
+  transform: rotate(180deg);
+}
+
+.drop_co:hover .down_company {
+  transform: rotate(180deg);
+}
+.drop_co:hover .Company {
+  display: block;
+}
+.drop_co {
+  padding: 20px 0px;
+  font-family: Epil;
+}
+.features ul {
+  gap: 1rem;
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: start;
+  flex-direction: column;
+}
+.features ul li {
+  gap: 15px;
+  display: flex;
+}
+.Company {
+  display: none;
+  position: absolute;
+  top: 68px;
+  left: 283px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 13px;
+}
+.Company ul {
+  align-items: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.left_nav ul li {
+  cursor: pointer;
+}
+
+.right_nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.login_btn {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+.login_btn:hover {
+  font-weight: 600;
+}
+.register_btn {
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 12px;
+  background-color: transparent;
+}
+.register_btn:hover {
+  font-weight: 600;
+}
+
+/* menu bar side------------- */
+
+.menu {
+  display: none;
+}
+
+.menu_bar {
+  position: absolute;
+  padding: 70px 20px;
+  top: 0;
+  right: -65%;
+  width: 60vw;
+  height: 100vh;
+  background-color: white;
+  transition: all 0.5s ease;
+}
+.cross {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  cursor: pointer;
+}
+
+.menu_login {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 2rem;
+}
+
+.menu_nav_lists {
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.menu_drop_fe {
+  position: relative;
+}
+.menu_drop_fe:hover .menu_features {
+  display: block;
+}
+
+.menu_features {
+  cursor: pointer;
+  padding: 9px 20px;
+  position: relative;
+
+  display: none;
+}
+.menu_features ul li:hover {
+  font-weight: 600;
+}
+
+.menu_features ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.menu_Company {
+  display: none;
+}
+.menu_Company ul {
+  list-style: none;
+  cursor: pointer;
+  padding: 9px 20px;
+  position: relative;
+}
+.menu_Company ul li {
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+.menu_Company ul li:hover {
+  font-weight: 700;
+}
+
+.menu_drop_co:hover .menu_Company {
+  display: block;
+}
+.menu_login .register_btn {
+  transition: all 0.5s linear;
+}
+
+.menu_login .register_btn:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Hero section-------------------- */
+
+.hero {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.left_hero {
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.left_hero p {
+  line-height: 20px;
+  max-width: 23rem;
+  padding-bottom: 2rem;
+}
+.left_hero h1 {
+  margin-top: 7rem;
+  position: relative;
+  z-index: -100;
+  font-size: 4rem;
+  padding: 40px 0px;
+}
+
+.learn_more {
+  font-weight: 600;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  width: 127px;
+  padding: 15px 15px;
+  border-radius: 12px;
+  transition: background-color 0.5s linear;
+}
+.learn_more:hover {
+  color: rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.logo_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 4rem;
+}
+
+.right_hero {
+  background: url("/images/image-hero-desktop.png");
+  background-size: cover;
+  background-position: center;
+  width: 409px;
+  height: 548px;
+}
+
+/* responsive------media ------------ */
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: block;
+  }
+
+  .left_nav ul {
+    list-style: none;
+
+    display: none;
+  }
+  .right_nav {
+    display: none;
+  }
+  .left_nav {
+    width: 100%;
+    padding: 0px 30px;
+    gap: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .right_hero {
+    background: url(/public/images/image-hero-mobile.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .left_hero {
+    order: 2;
+    padding: 0px 15px;
+  }
+  .hero {
+    flex-direction: column;
+    padding: 0px 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .left_hero h1 {
+    margin-top: 0rem;
+    font-size: 13vw;
+  }
+  .logo_container {
+    flex-wrap: wrap;
+  }
+  .learn_more {
+    margin: auto;
+  }
+
+  /* menu bar----------- */
+
+  .menu_bar {
+    padding: 70px 60px;
+  }
+}
+
+@media screen and (max-width: 444px) {
+  .menu_bar {
+    padding: 70px 30px;
+  }
+}
